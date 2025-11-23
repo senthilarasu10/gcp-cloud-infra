@@ -144,7 +144,7 @@ output "cloud_build_peered_network_id" {
  output "cicd_project_id" {
    description = "Project where the CI/CD infrastructure for GitHub Action resides."
    value       = module.gh_cicd.project_id
-# }
+ }
 
 /* ----------------------------------------
     Specific to jenkins_bootstrap module

@@ -68,6 +68,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    # Authenticates using Workload Identify Federation
+    - id: auth
+      uses: google-github-actions/auth@v2.0.0  
+      with:
+        workload_identity_provider: 'projects/528841817252/locations/global/workloadIdentityPools/github-wif-pool/providers/github'
+        service_account: 'cicd-github-svc-acct@tokyo-vigil-472618-u2.iam.gserviceaccount.com'
+
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1

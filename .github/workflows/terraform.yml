@@ -29,7 +29,3 @@ jobs:
         
     - name: 'Set up Cloud SDK'
       uses: 'google-github-actions/setup-gcloud@v2'
-      
-    - name: 'Describe Secrets'
-      run: |
-        gcloud secrets describe "my-secret" --project="tokyo-vigil-472618-u2"

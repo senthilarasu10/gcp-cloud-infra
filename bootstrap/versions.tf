@@ -38,10 +38,10 @@ terraform {
     # }
 
     // Un-comment github required_providers when using GitHub Actions
-    # github = {
-    #   source  = "integrations/github"
-    #   version = "5.34.0"
-    # }
+    github = {
+      source  = "integrations/github"
+      version = "5.34.0"
+    }
 
     // Un-comment tfe required_providers when using Terraform Cloud
     # tfe = {

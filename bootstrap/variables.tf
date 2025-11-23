@@ -69,13 +69,13 @@ variable "org_policy_admin_role" {
 variable "project_prefix" {
   description = "Name prefix to use for projects created. Should be the same in all steps. Max size is 3 characters."
   type        = string
-  default     = ""
+  default     = "project"
 }
 
 variable "folder_prefix" {
   description = "Name prefix to use for folders created. Should be the same in all steps."
   type        = string
-  default     = ""
+  default     = "folder"
 }
 
 variable "bucket_prefix" {
